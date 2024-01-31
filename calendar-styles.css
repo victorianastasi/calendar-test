@@ -1,0 +1,198 @@
+.calendar {
+    max-width: 320px;
+    width: 100%;
+    background-color: #fff;
+}
+@media only screen and (max-width: 752px) {
+    .calendar {
+        max-width: 340px;
+    }
+}
+.calendar .calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+}
+.calendar .calendar-header .calendar-title, .calendar .calendar-header .calendar-year {
+    font-weight: 600;
+    font-size: 1.1875rem;
+    line-height: 1.2;
+    font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-bottom: 0;
+}
+.calendar .calendar-body {
+    border-top: 1px solid #f3f6f9;
+    border-bottom: 1px solid #f3f6f9;
+    color: #69788a;
+    font-weight: 600;
+    font-size: 1.0625rem;
+    line-height: 1.2;
+    font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-bottom: 0;
+}
+@media only screen and (min-width: 592px) {
+    .calendar .calendar-header .calendar-title, .calendar .calendar-header .calendar-year {
+        font-weight: 700;
+   }
+}
+.calendar .calendar-body table {
+    width: 100%;
+    margin-top: 0.75rem;
+    text-align: center;
+}
+.calendar .calendar-body table .calendar-week th {
+    font-weight: 700;
+    color: #38485c;
+    padding-bottom: 1rem;
+}
+.calendar .calendar-body table .calendar-numbers td {
+    pointer-events: inherit;
+    padding: 5px 0;
+}
+.calendar .calendar-body table .calendar-numbers td .calendar-link {
+    border-radius: 50%;
+}
+.calendar .calendar-body table .calendar-numbers td span {
+    height: 2.25rem;
+    width: 2.25rem;
+    display: inline-block;
+    line-height: 2.25rem;
+    margin-bottom: 0;
+    border-radius: 50%;
+}
+.calendar .calendar-body table .calendar-numbers td span:after {
+    line-height: 1.5;
+}
+.calendar .calendar-body table .calendar-numbers td span.active {
+    color: #fff;
+    background-color: #007bc7;
+    cursor: pointer;
+}
+.calendar .calendar-body table .calendar-numbers td span.active.sky {
+    color: #38485c;
+    background-color: #99e8ff;
+}
+.calendar .calendar-body table .calendar-numbers td span.active.lavender {
+    color: #38485c;
+    background-color: #99b5ff;
+}
+.calendar .calendar-body table .calendar-numbers td span.active.coral {
+    color: #38485c;
+    background-color: #ffaf99;
+}
+.calendar .calendar-body table .calendar-numbers td span.active.avocado {
+    color: #38485c;
+    background-color: #b5ff99;
+}
+.calendar .calendar-body table .calendar-numbers td span.active.citrus {
+    color: #38485c;
+    background-color: #ffe299;
+}
+.calendar .calendar-body table .calendar-numbers td span.active.lime {
+    color: #38485c;
+    background-color: #e8ff99;
+}
+.calendar .calendar-body table .calendar-numbers td span.active.pistachio {
+    color: #38485c;
+    background-color: #99ffaf;
+}
+.calendar .calendar-body table .calendar-numbers td span.active.berries {
+    color: #38485c;
+    background-color: #e299ff;
+}
+.calendar .calendar-body table .calendar-numbers td span.active.musket {
+    color: #38485c;
+    background-color: #ff99e8;
+}
+.calendar .calendar-body table .calendar-numbers td span.active.gray {
+    color: #38485c;
+    background-color: #e5e5e5;
+}
+
+
+.calendar .calendar-footer .calendar-footer-list {
+    padding: 0.75rem;
+    margin-bottom: 0;
+}
+.calendar .calendar-footer .calendar-footer-list li {
+    font-size: 0.8125rem;
+    list-style-type: none;
+}
+.calendar .calendar-footer .calendar-footer-list li:not(:last-child) {
+    margin-bottom: 0.25rem;
+}
+
+.calendar .calendar-footer .accordion {
+    margin-top: 0.75rem;
+}
+.calendar .calendar-footer .accordion .calendar-footer-list {
+    padding: 0;
+}
+
+.calendar-yearly {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: space-between;
+}
+.calendar-yearly .calendar {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+@media only screen and (min-width: 976px) and (max-width: 1120px) {
+    .calendar-yearly {
+        justify-content: space-evenly;
+    }
+}
+@media only screen and (max-width: 752px) {
+    .calendar-yearly {
+        justify-content: center;
+    }
+}
+
+
+/* ESTILOS PARA CONTENEDOR CON INDICADORES DE COLORES EN CALENDARIO INTERRELIGIOSO */
+.color-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 0.75rem;
+}
+.color-box .color {
+    min-width: 1rem;
+    max-height: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    display: inline-block;
+}
+.color-box .color.sky {
+    background-color: #99e8ff;
+}
+.color-box .color.lavender {
+    background-color: #99b5ff;
+}
+.color-box .color.berries {
+    background-color: #e299ff;
+}
+.color-box .color.musket {
+    background-color: #ff99e8;
+}
+.color-box .color.coral {
+    background-color: #ffaf99;
+}
+.color-box .color.citrus {
+    background-color: #ffe299;
+}
+.color-box .color.lime {
+    background-color: #e8ff99;
+}
+.color-box .color.avocado {
+    background-color: #b5ff99;
+}
+.color-box .color.pistachio {
+    background-color: #99ffaf;
+}
+.color-box .color.gray {
+    background-color: #e5e5e5;
+}

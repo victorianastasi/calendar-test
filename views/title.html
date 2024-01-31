@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar Title</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="../static/favicon.ico" />
+    <link
+      href="https://gcba.github.io/Obelisco/obelisco.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../calendar-styles.css" />
+  </head>
+  <body>
+    <main class="container my-4">
+      <div class="d-flex flex-wrap mb-4" style="gap: 0.75rem">
+        <a href="../index.html" class="btn btn-primary btn-sm">Inicio</a>
+        <a href="./tooltip.html" class="btn btn-secondary btn-sm"
+          >Con Tooltip</a
+        >
+        <a href="./title.html" class="btn btn-secondary btn-sm">Con Title</a>
+        <a href="./no-link.html" class="btn btn-secondary btn-sm">Sin enlace</a>
+        <a href="./anual.html" class="btn btn-secondary btn-sm">Anual</a>
+        <a href="./religius.html" class="btn btn-secondary btn-sm"
+          >Anual interreligioso</a
+        >
+      </div>
+
+      <h1 class="mb-5 bg-light py-3">Calendar - Con Title</h1>
+
+      <div class="calendar">
+        <div class="calendar-header">
+          <h3 class="calendar-title">Diciembre</h3>
+          <span class="calendar-year">2024</span>
+        </div>
+        <div class="calendar-body">
+          <table>
+            <tbody>
+              <tr class="calendar-week">
+                <th>D</th>
+                <th>L</th>
+                <th>M</th>
+                <th>M</th>
+                <th>J</th>
+                <th>V</th>
+                <th>S</th>
+              </tr>
+              <tr class="calendar-numbers">
+                <td><span>1</span></td>
+                <td><span>2</span></td>
+                <td><span>3</span></td>
+                <td><span>4</span></td>
+                <td>
+                  <span title="Día del Ciudadano Ambiental"
+                    ><a href="#" class="calendar-link"
+                      ><span class="active">5</span></a
+                    ></span
+                  >
+                </td>
+                <td><span>6</span></td>
+                <td><span>7</span></td>
+              </tr>
+              <tr class="calendar-numbers">
+                <td><span>8</span></td>
+                <td><span>9</span></td>
+                <td>
+                  <span
+                    title="Día Internacional de los Derechos Humanos y de los Animales"
+                    ><a href="#" class="calendar-link"
+                      ><span class="active">10</span></a
+                    ></span
+                  >
+                </td>
+                <td>
+                  <span title="Día Internacional de las Montañas"
+                    ><a href="#" class="calendar-link"
+                      ><span class="active">11</span></a
+                    ></span
+                  >
+                </td>
+                <td><span>12</span></td>
+                <td><span>13</span></td>
+                <td><span>14</span></td>
+              </tr>
+              <tr class="calendar-numbers">
+                <td><span>15</span></td>
+                <td><span>16</span></td>
+                <td><span>17</span></td>
+                <td><span>18</span></td>
+                <td><span>19</span></td>
+                <td><span>20</span></td>
+                <td><span>21</span></td>
+              </tr>
+              <tr class="calendar-numbers">
+                <td><span>22</span></td>
+                <td><span>23</span></td>
+                <td><span>24</span></td>
+                <td><span>25</span></td>
+                <td><span>26</span></td>
+                <td><span>27</span></td>
+                <td><span>28</span></td>
+              </tr>
+              <tr class="calendar-numbers">
+                <td><span>29</span></td>
+                <td><span>30</span></td>
+                <td><span>31</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="calendar-footer">
+          <ul class="calendar-footer-list">
+            <li><strong>5.</strong> Día del Ciudadano Ambiental</li>
+            <li>
+              <strong>10.</strong> Día Internacional de los Derechos Humanos y
+              de los Animales
+            </li>
+            <li><strong>11.</strong> Día Internacional de las Montañas</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
