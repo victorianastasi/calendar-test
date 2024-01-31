@@ -69,47 +69,21 @@
     background-color: #007bc7;
     cursor: pointer;
 }
-.calendar .calendar-body table .calendar-numbers td span.active.sky {
+.calendar .calendar-body table .calendar-numbers td span.active.bg-sky,
+.calendar .calendar-body table .calendar-numbers td span.active.bg-lavender,
+.calendar .calendar-body table .calendar-numbers td span.active.bg-coral,
+.calendar .calendar-body table .calendar-numbers td span.active.bg-avocado,
+.calendar .calendar-body table .calendar-numbers td span.active.bg-citrus,
+.calendar .calendar-body table .calendar-numbers td span.active.bg-lime,
+.calendar .calendar-body table .calendar-numbers td span.active.bg-pistachio,
+.calendar .calendar-body table .calendar-numbers td span.active.bg-berries,
+.calendar .calendar-body table .calendar-numbers td span.active.bg-musket,
+.calendar .calendar-body table .calendar-numbers td span.active.bg-gray {
     color: #38485c;
-    background-color: #99e8ff;
 }
-.calendar .calendar-body table .calendar-numbers td span.active.lavender {
-    color: #38485c;
-    background-color: #99b5ff;
-}
-.calendar .calendar-body table .calendar-numbers td span.active.coral {
-    color: #38485c;
-    background-color: #ffaf99;
-}
-.calendar .calendar-body table .calendar-numbers td span.active.avocado {
-    color: #38485c;
-    background-color: #b5ff99;
-}
-.calendar .calendar-body table .calendar-numbers td span.active.citrus {
-    color: #38485c;
-    background-color: #ffe299;
-}
-.calendar .calendar-body table .calendar-numbers td span.active.lime {
-    color: #38485c;
-    background-color: #e8ff99;
-}
-.calendar .calendar-body table .calendar-numbers td span.active.pistachio {
-    color: #38485c;
-    background-color: #99ffaf;
-}
-.calendar .calendar-body table .calendar-numbers td span.active.berries {
-    color: #38485c;
-    background-color: #e299ff;
-}
-.calendar .calendar-body table .calendar-numbers td span.active.musket {
-    color: #38485c;
-    background-color: #ff99e8;
-}
-.calendar .calendar-body table .calendar-numbers td span.active.gray {
-    color: #38485c;
+.calendar .calendar-body table .calendar-numbers td span.active.bg-gray {
     background-color: #e5e5e5;
 }
-
 
 .calendar .calendar-footer .calendar-footer-list {
     padding: 0.75rem;
@@ -166,33 +140,7 @@
     border-radius: 50%;
     display: inline-block;
 }
-.color-box .color.sky {
-    background-color: #99e8ff;
-}
-.color-box .color.lavender {
-    background-color: #99b5ff;
-}
-.color-box .color.berries {
-    background-color: #e299ff;
-}
-.color-box .color.musket {
-    background-color: #ff99e8;
-}
-.color-box .color.coral {
-    background-color: #ffaf99;
-}
-.color-box .color.citrus {
-    background-color: #ffe299;
-}
-.color-box .color.lime {
-    background-color: #e8ff99;
-}
-.color-box .color.avocado {
-    background-color: #b5ff99;
-}
-.color-box .color.pistachio {
-    background-color: #99ffaf;
-}
-.color-box .color.gray {
+
+.color-box .color.bg-gray {
     background-color: #e5e5e5;
 }
